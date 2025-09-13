@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Zap, Shield, Target } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import TerminalInitializer from '@/components/TerminalInitializer';
 import ProductCard from '@/components/ProductCard';
@@ -108,13 +109,17 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TerminalButton variant="acquire" size="xl" className="flex items-center space-x-3">
-              <span>ENTER ARMORY</span>
-              <ArrowRight className="w-5 h-5" />
-            </TerminalButton>
-            <TerminalButton variant="outline" size="xl">
-              REQUEST CLEARANCE
-            </TerminalButton>
+            <Link to="/armory">
+              <TerminalButton variant="acquire" size="xl" className="flex items-center space-x-3">
+                <span>ENTER ARMORY</span>
+                <ArrowRight className="w-5 h-5" />
+              </TerminalButton>
+            </Link>
+            <Link to="/contact">
+              <TerminalButton variant="outline" size="xl">
+                REQUEST CLEARANCE
+              </TerminalButton>
+            </Link>
           </div>
         </div>
       </section>
@@ -167,10 +172,12 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <TerminalButton variant="primary" size="lg" className="flex items-center space-x-3 mx-auto">
-              <span>ACCESS FULL ARMORY</span>
-              <ArrowRight className="w-5 h-5" />
-            </TerminalButton>
+            <Link to="/armory">
+              <TerminalButton variant="primary" size="lg" className="flex items-center space-x-3 mx-auto">
+                <span>ACCESS FULL ARMORY</span>
+                <ArrowRight className="w-5 h-5" />
+              </TerminalButton>
+            </Link>
           </div>
         </div>
       </section>

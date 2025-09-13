@@ -69,18 +69,42 @@ const Navigation = () => {
                 <div className="text-xs text-muted-foreground mb-4">
                   Select your operational region for regulatory compliance.
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 gap-2 max-h-48 overflow-y-auto">
                   <TerminalButton variant="ghost" size="sm" className="justify-start">
-                    NORTH AMERICA
+                    UNITED STATES
                   </TerminalButton>
                   <TerminalButton variant="ghost" size="sm" className="justify-start">
-                    EUROPE
+                    CANADA
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    UNITED KINGDOM
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    GERMANY
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    FRANCE
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    AUSTRALIA
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    SWITZERLAND
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start">
+                    NORWAY
                   </TerminalButton>
                   <TerminalButton variant="ghost" size="sm" className="justify-start text-destructive">
-                    RESTRICTED
+                    CHINA - RESTRICTED
                   </TerminalButton>
                   <TerminalButton variant="ghost" size="sm" className="justify-start text-destructive">
-                    CLASSIFIED
+                    RUSSIA - RESTRICTED
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start text-destructive">
+                    IRAN - CLASSIFIED
+                  </TerminalButton>
+                  <TerminalButton variant="ghost" size="sm" className="justify-start text-destructive">
+                    NORTH KOREA - CLASSIFIED
                   </TerminalButton>
                 </div>
                 <div className="mt-3 text-xs text-accent">
